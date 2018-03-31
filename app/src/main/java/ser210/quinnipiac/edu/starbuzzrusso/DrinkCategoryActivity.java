@@ -4,6 +4,8 @@ package ser210.quinnipiac.edu.starbuzzrusso;
  * Created by markrusso on 2/17/18.
  * SER210
  * Assignment 6
+ * updated April 3, 2018
+ * chapter 11
  */
 
 import android.app.ListActivity;
