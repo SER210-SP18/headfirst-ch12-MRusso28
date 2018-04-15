@@ -1,10 +1,12 @@
 package ser210.quinnipiac.edu.starbuzzrusso;
 
 /**
- * Created by markrusso on 3/31/18.
- * Chapter 11 Demo
- * April 3, 2018
+ * Created by markrusso on 2/17/18.
+ * SER210
+ * updated April 15, 2018
+ * chapter 12
  */
+
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -12,9 +14,10 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
 class StarbuzzDatabaseHelper extends SQLiteOpenHelper {
-    // name of our database
+
+    // name of database
     private static final String DB_NAME = "starbuzz";
-    // version of the database
+    // version of database
     private static final int DB_VERSION = 2;
 
     StarbuzzDatabaseHelper(Context context) {
@@ -49,8 +52,7 @@ class StarbuzzDatabaseHelper extends SQLiteOpenHelper {
     }
 
     @Override
-    public void onDowngrade(SQLiteDatabase db, int oldVersion, int newVersion){
-        //code goes here if used
+    public void onDowngrade(SQLiteDatabase db, int oldVersion, int newVersion) {
     }
 
     private static void insertDrink(SQLiteDatabase db, String name, String description, int resourceId) {
